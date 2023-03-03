@@ -1,0 +1,7 @@
+import os
+
+path=r'F:\download\kitti_vo_256\00_2'
+for i in os.listdir(path):
+        if i[2]=='2' or i[2]=='3' or i[2]=='4':
+                print(i)
+                os.remove(os.path.join(path+"\\"+i))
